@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<p lang="en">
+<head>
+    <title>RiskAssess | Assessment</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='heart1.css') }}">
+    <link rel="stylesheet" href="../static/heart1.css">
+</head>
+<body>
+    <div>
+        <h1 class="display-5">Risk Assessment</h1>
+        <p class="lead">Please find below the Risk Assessment</p>
+    </div>
+    <div class="container themed-container">
+        <h1>{{ prediction_text }}</h1>
+        <p>Click <a href="https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118">here</a> to learn more about Heart Disease</p>
+    </div>
+    <div class="button">
+        <button class="signup" id="download">Download</button>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+        window.onload = function () {
+        document.getElementById("download")
+            .addEventListener("click", () => {
+                const invoice = this.document.getElementById("assess");
+                console.log(invoice);
+                console.log(window);
+                var opt = {
+                    margin: 1,
+                    filename: 'Heart_Assessment.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+                };
+                html2pdf().from(invoice).set(opt).save();
+            })
+        }
+    </script>
+</body>
+</html>

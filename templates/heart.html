@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='heart.css') }}">
+    <link rel="stylesheet" href="../static/heart.css">
+	  <title>Heart Disease Prediction</title>
+</head>
+<body>
+   <section>
+     <div class="container">
+        <header>
+          <h1>Heart Health Prediction</h1>
+          <nav>
+              <ul>
+                  <li><a href="/dashboard">Home</a></li>
+                  <li><a href="/heart">Heart-Prediction</a></li>
+                  <li><a href="/help">Help</a></li>
+                  <li><a href="#">|</a></li>
+                  <li><a href="/logout">Logout</a></li>
+              </ul>
+          </nav>
+        </header>
+
+        <div class="s1">
+          <form action="{{ url_for('predictheart')}}" method="post" class="form-inline">
+            <h1>Please Enter Patient details</h1>
+            <div class="all">
+              <div class="f1">
+                <div class="input-box">
+                  <input class="form-control" type="number" name="age" required="required"/>
+                  <label for="age">Age in Years</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="sex" required="required"/>
+                  <label for="sex">Sex</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="cp" required="required"/>
+                  <label for="cp">CP</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="trestbps" required="required"/>
+                  <label for="trestbps">Trest Bps</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="chol" required="required"/>
+                  <label for="chol">Cholesterol</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="fbs" required="required"/>
+                  <label for="fbs">FBS</label>
+                </div>
+              </div>
+              <div class="f1">
+                <div class="input-box">
+                  <input class="form-control" type="number" name="restecg" required="required"/>
+                  <label for="restecg">RESTECG</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="thalach" required="required"/>
+                  <label for="thalach">Thalach</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="exang" required="required"/>
+                  <label for="exang">EXANG</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="oldpeak" required="required"/>
+                  <label for="oldpeak">Old Peak</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="slope" required="required"/>
+                  <label for="slope">SLOPE</label>
+                </div>
+                <div class="input-box">
+                  <input class="form-control" type="number" name="ca" required="required"/>
+                  <label for="ca">CA</label>
+                </div>
+              </div>
+            </div>
+              <div class="last">
+                <div class="input-box">
+                  <input class="form-control" type="number" name="thal" required="required"/>
+                  <label for="thal">THAL</label>
+                </div>
+              </div>
+              <div class="button">
+                <button type="submit" class="signup"">Predict</button>
+              </div>
+          </form>
+
+        </div>
+      </div>
+   </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

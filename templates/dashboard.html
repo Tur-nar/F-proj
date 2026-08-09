@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heart Prediction| Get Started</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="../static/dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="s1">
+        <div class="container">
+            <header>
+                <h1>Heart Health Prediction</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/dashboard">Home</a></li>
+                        <li><a href="/heart">Heart-Prediction</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero-sec">
+                <div class="hero-sec-contents">
+                    <h1>Welcome to Heart Health <br> Prediction</h1>
+                    <p>Your health, our priority. Let's assess your heart disease risk efficiently and accurately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="container">
+            <div class="dsp">
+                <h2>Heart Disease Risk Assessment</h2>
+            </div>
+            <div class="s2-cont">
+                <div class="s2-img">
+                    <img src="../static/img/realistic-heart-shape-studio.jpg" alt="">
+                </div>
+                <div class="s2-contents">
+                    <p>
+                        Start a new assessment to understand your heart disease risk based on your health data. Our advanced 
+                        algorithm analyzes various health parameters, including age, cholesterol levels, blood pressure, and 
+                        lifestyle factors, to provide a comprehensive risk evaluation. This information can help you and your 
+                        healthcare provider make informed decisions about your health and preventive measures.
+                    </p>
+                    <button class="signup"><a href="/heart">New Assessment</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <div class="container">
+            <div class="s3-contents">
+                <div class="health-tips">
+                    <h2>Heart Health Tips</h2>
+                    <button class="signup"><a href="https://www.healthline.com/health/healthy-heart-tips" target="_blank">Explore more</a></button>
+                </div>
+                <div class="health-contents">
+                    <div class="f1">
+                        <div class="c1">
+                            <i class='bx bx-radio-circle'></i>
+                            <p>Maintain a balanced diet with plenty of fruitts and vegetables</p>
+                        </div>
+
+                        <div class="c1">
+                            <i class='bx bx-radio-circle'></i>
+                            <p>Exercise regularly to keep your heart strong.</p>
+                        </div>
+
+                        <div class="c1">
+                            <i class='bx bx-radio-circle'></i>
+                            <p>Avoid smoking and excessive alcohol consumption.</p>
+                        </div>
+
+                        <div class="c1">
+                            <i class='bx bx-radio-circle'></i>
+                            <p>Monitor your blood pressure and cholesterol levels.</p>
+                        </div>
+
+                        <div class="c1">
+                            <i class='bx bx-radio-circle'></i>
+                            <p>Stay informed about your family's medical history.</p>
+                        </div>
+
+                        <div class="c1">
+                            <i class='bx bx-radio-circle'></i>
+                            <p>Manage stress through relaxation techniques and hobbies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="s4">
+        <div class="container">
+            <div class="s4-content">
+                <h2>Confused On How You Can <br> Check Your Heart Health?</h2>
+                <button class="signup"><a href="/help">Help</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contents">
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="/dashboard">Home</a></li>
+                        <li><a href="/heart">heart-prediction</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>Contact Nanya</h2>
+                    <p>If you have any questions or need support, <br> please figure it out on your own</p>
+                </div>
+            </div>
+
+            <p class="copyright">&copy; 2024 RiskAssess. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

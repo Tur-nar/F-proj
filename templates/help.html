@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Help - Heart Disease Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='help.css') }}">
+    <link rel="stylesheet" href="../static/help.css">
+</head>
+<body>
+    <section class="s1">
+        <div class="container">
+            <header>
+                <h1>Heart Health Prediction</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/dashboard">Home</a></li>
+                        <li><a href="/heart">Heart-Prediction</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero-sec">
+                <div class="hero-sec-contents">
+                    <h1>Help and Information</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <h3>Input Your Data</h3>
+            <p>Fill out a simple form with your health information such as age, cholesterol levels, blood pressure, and more.</p>
+            <h3>Get Your Prediction</h3>
+            <p>Our system analyzes your data and provides an accurate prediction of your heart disease risk.</p>
+            <h3>Receive Recommendations</h3>
+            <p>Based on your prediction, receive personalized recommendations on how to improve and maintain your heart health.</p>
+        </section>
+        
+        <section class="attributes">
+            <h2>Understanding the Attributes</h2>
+            <ul>
+                <li><strong>Age:</strong> The age of the individual in years.</li>
+                <li><strong>Sex:</strong> The gender of the individual (1 = male, 0 = female).</li>
+                <li><strong>CP (Chest Pain Type):</strong> The type of chest pain experienced:
+                    <ul class="lis">
+                        <li class="lis">0: Typical angina</li>
+                        <li class="lis">1: Atypical angina</li>
+                        <li class="lis">2: Non-anginal pain</li>
+                        <li class="lis">3: Asymptomatic</li>
+                    </ul>
+                </li>
+                <li><strong>Trestbps (Resting Blood Pressure):</strong> The resting blood pressure (in mm Hg).</li>
+                <li><strong>Chol (Serum Cholesterol):</strong> The serum cholesterol level (in mg/dl).</li>
+                <li><strong>FBS (Fasting Blood Sugar):</strong> Whether the fasting blood sugar is > 120 mg/dl (1 = true, 0 = false).</li>
+                <li><strong>Restecg (Resting Electrocardiographic Results):</strong> The resting ECG results:
+                    <ul>
+                        <li class="lis">0: Normal</li>
+                        <li class="lis">1: Having ST-T wave abnormality</li>
+                        <li class="lis">2: Showing probable or definite left ventricular hypertrophy</li>
+                    </ul>
+                </li>
+                <li><strong>Thalach (Maximum Heart Rate Achieved):</strong> The maximum heart rate achieved during exercise.</li>
+                <li><strong>Exang (Exercise Induced Angina):</strong> Whether exercise-induced angina occurs (1 = yes, 0 = no).</li>
+                <li><strong>Oldpeak:</strong> ST depression induced by exercise relative to rest.</li>
+                <li><strong>Slope:</strong> The slope of the peak exercise ST segment:
+                    <ul>
+                        <li class="lis">0: Upsloping</li>
+                        <li class="lis">1: Flat</li>
+                        <li class="lis">2: Downsloping</li>
+                    </ul>
+                </li>
+                <li><strong>CA (Number of Major Vessels):</strong> The number of major vessels (0-3) colored by fluoroscopy.</li>
+                <li><strong>Thal:</strong> Thalassemia:
+                    <ul>
+                        <li class="lis">0: Normal</li>
+                        <li class="lis">1: Fixed defect</li>
+                        <li class="lis">2: Reversible defect</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contents">
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="/dashboard">Home</a></li>
+                        <li><a href="/heart">heart-prediction</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>Contact Nanya</h2>
+                    <p>If you have any questions or need support, <br> please figure it out on your own</p>
+                </div>
+            </div>
+
+            <p class="copyright">&copy; 2024 RiskAssess. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
